@@ -1,7 +1,8 @@
 #ifndef SDL_circleQuarter_h_
 #define SDL_circleQuarter_h_
 
-#include "SDL_circle.h"
+#include <SDL2/SDL_render.h>
+#include <SDL_circle.h>
 
 typedef enum SDL_CircleQuarter
 {
@@ -12,6 +13,6 @@ typedef enum SDL_CircleQuarter
 } SDL_CircleQuarter;
 
 
-extern int SDL_RenderFillCircleQuarter(SDL_Renderer* const restrict renderer, SDL_Circle const *const restrict circle, SDL_CircleQuarter const quarter);
+extern DECLSPEC int SDLCALL SDL_RenderFillCircleQuarter(SDL_Renderer* const restrict renderer, SDL_Circle const *const restrict circle, SDL_CircleQuarter const quarter);
 
 #endif

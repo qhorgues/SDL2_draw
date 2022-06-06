@@ -1,4 +1,6 @@
 #include <SDL_circleQuarter.h>
+#include <SDL_circle.h>
+#include <SDL2/SDL_render.h>
 
 #define CIRCLE(x, y, r) (SDL_Circle){x, y, r}
 
